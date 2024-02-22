@@ -1,0 +1,174 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(./fonts/Gilroy-Black.woff2);
+  }
+  
+  @font-face {
+    font-family: Gilroy-sbold;
+    src: url(./fonts/Gilroy-SemiBold.woff2);
+  }
+  
+  @font-face {
+    font-family: Gilroy-light;
+    src: url(./fonts/Gilroy-Light.woff2);
+  }
+  
+  @font-face {
+    font-family: Gilroy-thin;
+    src: url(./fonts/Gilroy-Thin.woff2);
+  }
+  
+  @font-face {
+    font-family: Gilroy-med;
+    src: url(./fonts/Gilroy-Medium.woff2);
+  }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body,html {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    pointer-events: all;
+    height: 100vh;
+    width: 100%;
+}
+#back{
+    height: 100vh;
+    width: 100%;
+    pointer-events: all;
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#front{
+    pointer-events: none;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+#work{
+    width: 100%;
+    height: 100vh;
+    max-width: 1500px;
+    position: relative;
+}
+nav{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navleft{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.navleft img {
+    height: 65px;
+}
+.navleft a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Gilroy-light;
+    font-size: 14px;
+    font-weight: 700;
+}
+.navright{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.navright a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Gilroy-light;
+    font-size: 14px;
+    font-weight: 700;
+}
+#f {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.h1s{
+    position: relative;
+    overflow: hidden;
+    height: 8.4vw;
+    width: 60vw;
+}
+.h1s h1:nth-child(1){
+    top: 0;
+    opacity: 1;
+}
+.h1s h1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 10vw;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-family: Gilroy-med;
+    line-height: .9;
+    opacity: 0;
+}
+button {
+    pointer-events: all;
+    margin-top: 8vh;
+    height: 55px;
+    width: fit-content;
+    font-size: 2vw;
+    font-weight: 500;
+    letter-spacing: 0.2vw;
+    text-transform: uppercase;
+    font-family: Gilroy-light;
+    color: #000;
+}
+#fright{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#fright .image {
+    margin: 5vh 0 10vh 0;
+    width: 70%;
+    height: 170px;
+    margin-bottom: 5vh;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.image img:nth-child(1){
+    top: 0;
+    opacity: 1;
+}
+.image img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 100%;
+}
+#fright p {
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 25px;
+}
